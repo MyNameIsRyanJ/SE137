@@ -4,9 +4,136 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" href="images/logo.svg" type="image/icon type">
+    <title>Week 1|Bio Page</title>
+    <style>
+        @font-face {
+            font-family: 'Anurati';
+            src: url("fonts/Anurati-Regular.otf") format("opentype");
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #27272a;
+            color: white;
+            font-family: "Libre Baskerville";
+        }
+        .hide {
+            display: none;
+        }
+        .box {
+            display: flex;
+            margin: .5em;
+            padding: .5em;
+        }
+        h1 {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            font-family: "Anurati";
+            color: red;
+            font-size: 32px;
+        }
+        #nav {
+            display: flex;
+            flex-basis: 60%;
+            justify-content: space-evenly;
+            font-size: 3em;
+            flex-wrap: wrap;
+            align-content: center;
+        }
+        a {
+            text-decoration: underline;
+            color: red;
+        }
+        a:hover {
+            color: white;
+        }
+        #footer {
+            text-align: center;
+        }
+        .content {
+            padding: .5em;
+            margin: .5em;
+            font-size: 24px;
+            background-color: #3f3f46;
+        }
+        h2 {
+            color: red;
+            font-size: 32px;
+        }
+        .flex {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+        }
+        .length {
+            width: 75%;
+        }
+    </style>
 </head>
 <body>
-    <p>Hello World!</p>
+    <div class="box">
+        <img src="images/logo.svg" width="100" height="90">
+        <h1 class=""><strong>RYAN JAKUBIELSKI</strong></h1>
+        <hr>
+        <div id="nav">
+            <a href="#">Bio</a>
+            <a href="#">Education</a>
+            <a href="#">Hobbies</a>
+        </div>
+    </div>
+    <hr>
+    <div id="main">
+        <div id="bio" class="content">
+            <h2><b>My Bio</b></h2>
+            <div class="flex">
+                <img src="images/bio.png" alt="Edgy knight in black holding a glowing red sword." width="15%" height="15%">
+                <p class="length">Hello, my name is Ryan Jakubielski, and I am currently pursuing an associate's degree in software engineering and web development at the New England Institute of Technology. Growing up, I was fascinated with computer programming and started creating small mods for video games at a young age. However, I soon found myself spending more time making mods than playing games. Over the years, I learned about different programming languages and became enthralled with large complex algorithms that could simulate intelligent output. My love for AI led me to study Generative AI and Natural Language Processing, where I discovered the many challenges involved in generating text. As a result, I sought to develop my own solutions to these problems. Currently, I am attending NEIT with an unrelenting determination to succeed and am continually developing Natural Language Processing apps while exploring solutions to the current issues in Generative AI.</p>
+            </div>
+            <hr>
+        </div>
+        <div id="ed" class="content hide">
+            <h2>Schooling</h2>
+            <ul>
+                <li><a href="https://www.saintbernardschool.org/">Saint Bernard School</a></li>
+                <li>Three Rivers Community College</li>
+                <li>New England Institute of Technology</li>
+            </ul>
+            <hr>
+        </div>
+        <div id="hobbies" class="content hide">
+            <h2>Hobbies</h2>
+            <div class="flex">
+                <ol>
+                    <li>Programming</li>
+                    <li>Artificial Intelligence</li>
+                    <li>Video Games</li>
+                </ol>
+                <img src="images/hobbies.png" alt="Three distinguished wombat gentlemen playing chess." width="25%" height="25%">
+            </div>
+            <hr>
+        </div>
+        <div id="footer">
+            <i>©2023</i> <em>Ryan Jakubielski | W1 Assignment</em>
+        </div>
+    </div>
+    <hr>
+    <script>
+        var a = document.querySelectorAll(`#nav a`);
+
+        for (let i = 0; i < a.length; i++) {
+            a[i].addEventListener(`click`, function (e) {
+                e.preventDefault();
+                var div = document.querySelectorAll(`.content`);
+                for (let j = 0; j < div.length; j++) {
+                    div[j].classList.add(`hide`);
+                }
+                div[i].classList.remove(`hide`);
+            })
+        }
+    </script>
 </body>
 </html>
