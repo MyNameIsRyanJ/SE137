@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.svg" type="image/icon type">
+    <title>Week 2|Bio Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="">
+        <div id="logo">
+            <img src="images/logo.svg" width="100" height="90">
+            <h1 class=""><strong>RYAN JAKUBIELSKI</strong></h1>
+        </div>
+        <div id="nav">
+            <a href="#">Bio</a>
+            <a href="#">Education</a>
+            <a href="#">Hobbies</a>
+        </div>
+    </div>
+    <div id="main">
+        <div id="bio" class="content">
+            <h2><b>My Bio</b></h2>
+            <div class="flex">
+                <p class="length">Hello, my name is Ryan Jakubielski, and I am currently pursuing an associate's degree in software engineering and web development at the New England Institute of Technology. Growing up, I was fascinated with computer programming and started creating small mods for video games at a young age. However, I soon found myself spending more time making mods than playing games. Over the years, I learned about different programming languages and became enthralled with large complex algorithms that could simulate intelligent output. My love for AI led me to study Generative AI and Natural Language Processing, where I discovered the many challenges involved in generating text. As a result, I sought to develop my own solutions to these problems. Currently, I am attending NEIT with an unrelenting determination to succeed and am continually developing Natural Language Processing apps while exploring solutions to the current issues in Generative AI.</p>
+            </div>
+        </div>
+        <div id="ed" class="content">
+            <h2>Schooling</h2>
+            <ul>
+                <li><a href="https://www.saintbernardschool.org/" target="_blank">Saint Bernard School</a></li>
+                <li>Three Rivers Community College</li>
+                <li>New England Institute of Technology</li>
+            </ul>
+        </div>
+        <div id="hobbies" class="content">
+            <h2>Hobbies</h2>
+            <div class="">
+                <ol>
+                    <li>Programming</li>
+                    <li>Artificial Intelligence</li>
+                    <li>Video Games</li>
+                </ol>
+            </div>
+        </div>
+        <div id="footer">
+            <i>©2023</i> <em>Ryan Jakubielski | W3 Assignment</em>
+        </div>
+    </div>
+    <script>
+        var a = document.querySelectorAll(`#nav a`);
+
+        for (let i = 0; i < a.length; i++) {
+            a[i].addEventListener(`click`, function (e) {
+                e.preventDefault();
+                var div = document.querySelectorAll(`.content`);
+                for (let j = 0; j < div.length; j++) {
+                    div[j].classList.add(`hide`);
+                }
+                div[i].classList.remove(`hide`);
+            })
+        }
+    </script>
+</body>
+</html>
