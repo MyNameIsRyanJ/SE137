@@ -1,0 +1,137 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-size: 12px;
+    display: inline;
+}
+
+#title {
+    color: #fff;
+    align-self: center;
+}
+
+.actions {
+    padding-left: 46px;
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #E3E3E3;
+}
+
+.top-bar {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: center;
+    background-color: #505050;
+    height: 23px;
+}
+
+.fa-gear {
+    align-self: center;
+    font-size: 16px;
+    color: #E3E3E3;
+    padding-right: 8px;
+}
+
+content {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 95%;
+}
+
+.side-bar {
+    background-color: #505050;
+    height: 100%;
+    width: 45px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.icon {
+    align-self: center;
+    font-size: 32px;
+    color: #E3E3E3;
+}
+
+.fa-trash {
+    margin-top: auto;
+    margin-bottom: 4px;
+}
+
+.fa-note-sticky  {
+    margin-top: 16px;
+}
+
+.tray {
+    height: 100%;
+    width: 144px;
+    background-color: #373737;
+}
+
+.main {
+    height: 100%;
+    background-color: #060606;
+    width: 100%;
+}
+
+.tabs {
+    height: 34px;
+    display: flex;
+}
+
+#tab-1, #tab-2, #tab-3 {
+    height: 100%;
+    width: 173px;
+    background-color: #373737;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    font-size: 12px;
+    display: flex;
+    color: #C2C2C2;
+}
+
+.fa-plane {
+    font-size: 16px;
+    align-self: center;
+    padding: 5px;
+    color: #E3E3E3;
+}
+
+.close {
+    margin-left: auto;
+    margin-right: 4px;
+    font-weight: bolder;
+    font-size: 16px;
+    align-self: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.tree {
+    background-color: #161616;
+    width: 100%;
+    height: 23px;
+    color: #C2C2C2;
+    padding-left: 8px;
+}
+
+.tree-text {
+    display: inline;
+    color: #0254A0;
+    text-decoration: underline;
+}
+
+footer {
+    height: 14px;
+    background-color: #0254A0;
+}

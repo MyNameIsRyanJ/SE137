@@ -1,0 +1,76 @@
+@media (max-width: 500px) {
+    h1 {
+        font-size: 2em;
+    }
+    .stat {
+        display: none;
+    }
+    tr:first-of-type {
+        display: none;
+    }
+    thead {
+        font-size: 1.5em;
+    }
+    tbody {
+        font-size: 1.25em;
+    }
+}
+
+@media (max-width: 1000px) and (min-width: 501px) {
+    h1 {
+        font-size: 1.5em;
+    }
+    tr:first-of-type {
+        display: none;
+    }
+    thead {
+        font-size: 1em;
+    }
+    tbody {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 1920px) and (min-width: 1001px) {
+    h1 {
+        font-size: 1.5em;
+    }
+    tr:nth-of-type(2) {
+        display: none;
+    }
+    thead {
+        font-size: 1em;
+    }
+    tbody {
+        font-size: 1em;
+    }
+}
+
+html, body{
+    margin:0;
+    height:100vh;
+    font-family: 'JetBrains Mono', monospace;
+    background-color: grey;
+}
+body{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+table{
+    width:80%;
+    border-collapse: collapse;
+}
+ td{
+    border-bottom:1px solid black;
+}
+
+thead {
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    background-color: black;
+    color: white;
+}
