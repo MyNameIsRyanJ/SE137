@@ -37,6 +37,10 @@ document.getElementById('tab2').addEventListener("click", (e) => {
     window.open("./featured.html","_self")
 });
 
+document.getElementById('github').addEventListener("click", (e) => {
+    window.open("https://github.com/MyNameIsRyanJ","_self")
+});
+
 const {host, hostname, href, origin, pathname, port, protocol, search} = window.location
 if ((localStorage.getItem("tab0") === 'false') && !(href.includes('index.html'))) {
     tabs[0].classList.add('hidden')
